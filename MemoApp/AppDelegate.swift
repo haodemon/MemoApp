@@ -11,11 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
+    @IBOutlet weak var statusMenu: NSMenu!
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    
+    @IBAction func quitClicked(_ sender: NSMenuItem) {
+        NSApplication.shared.terminate(self)
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        statusItem.button?.title = "⚇"
+        statusItem.menu = statusMenu
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -24,4 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
+
+// ⚇    U+2687    &#9863;
+// Black circle with white dot right    ⚈    U+2688    &#9864;
+// Black circle with two white dots    ⚉
 
