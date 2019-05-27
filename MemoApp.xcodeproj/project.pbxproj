@@ -12,6 +12,8 @@
 		0D4E1054229AFAE000C51C19 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4E1052229AFAE000C51C19 /* MainMenu.xib */; };
 		0D4E1060229AFAE000C51C19 /* MemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E105F229AFAE000C51C19 /* MemoAppTests.swift */; };
 		0D4E106B229AFAE000C51C19 /* MemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E106A229AFAE000C51C19 /* MemoAppUITests.swift */; };
+		0D4E1079229B031B00C51C19 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E1078229B031B00C51C19 /* StatusMenuController.swift */; };
+		0DB4B45B229B07AE006353AA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB4B45A229B07AE006353AA /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0D4E1066229AFAE000C51C19 /* MemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4E106A229AFAE000C51C19 /* MemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppUITests.swift; sourceTree = "<group>"; };
 		0D4E106C229AFAE000C51C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4E1078229B031B00C51C19 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		0DB4B45A229B07AE006353AA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				0D4E104E229AFADF00C51C19 /* AppDelegate.swift */,
+				0DB4B45A229B07AE006353AA /* NotificationService.swift */,
 				0D4E1050229AFAE000C51C19 /* Assets.xcassets */,
 				0D4E1052229AFAE000C51C19 /* MainMenu.xib */,
 				0D4E1055229AFAE000C51C19 /* Info.plist */,
 				0D4E1056229AFAE000C51C19 /* MemoApp.entitlements */,
+				0D4E1078229B031B00C51C19 /* StatusMenuController.swift */,
 			);
 			path = MemoApp;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4E1079229B031B00C51C19 /* StatusMenuController.swift in Sources */,
 				0D4E104F229AFADF00C51C19 /* AppDelegate.swift in Sources */,
+				0DB4B45B229B07AE006353AA /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

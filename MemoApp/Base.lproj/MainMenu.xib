@@ -10,20 +10,26 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MemoApp" customModuleProvider="target">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MemoApp" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="jCo-i4-5VW" customClass="StatusMenuController" customModule="MemoApp" customModuleProvider="target">
             <connections>
-                <outlet property="statusMen" destination="bcs-Vp-y8C" id="80W-VW-xW6"/>
-                <outlet property="statusMenu" destination="bcs-Vp-y8C" id="7ga-m8-NKy"/>
+                <outlet property="statusMenu" destination="fbQ-mX-uKz" id="cZR-Lh-fIo"/>
             </connections>
         </customObject>
-        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <menu id="bcs-Vp-y8C" userLabel="Status Menu">
+        <menu id="fbQ-mX-uKz">
             <items>
-                <menuItem title="Quit" id="8xv-rj-7hQ">
+                <menuItem title="Send notification" id="ZXI-ew-gXP" userLabel="Send notification">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="Mvo-Nv-Rnc"/>
+                        <action selector="sendNotificationClicked:" target="jCo-i4-5VW" id="yht-EA-6rF"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="3Lt-ER-YLs" userLabel="Quit">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="jCo-i4-5VW" id="Enx-gl-6WX"/>
                     </connections>
                 </menuItem>
             </items>

@@ -10,24 +10,8 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var statusMenu: NSMenu!
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    
-    @IBAction func quitClicked(_ sender: NSMenuItem) {
-        NSApplication.shared.terminate(self)
-    }
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.button?.title = "⚇"
-        statusItem.menu = statusMenu
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-
+    func applicationDidFinishLaunching(_ aNotification: Notification) {}
+    func applicationWillTerminate(_ aNotification: Notification) {}
 }
 
 // ⚇    U+2687    &#9863;
